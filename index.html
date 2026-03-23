@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <title>Momoflix</title>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <div class="logo">
+            <img src="img/logo.png" alt="logo-netflix" width="50px">
+        </div>
+        <nav>
+            <a href="">Início</a>
+            <a href="">Séries</a>
+            <a href="">Mais recentes</a>
+            <a href="">Minha lista</a>
+        </nav>
+    </header>
+
+    <section class="banner">
+        <div class="conteudo">
+            <p class="titulo">Paloma e Guilherme</p>
+            <p class="detalhes">
+                <span>07 DE FEVEREIRO - 1 TEMPORADA</span>
+
+                <span class="stars">
+                    <i class="fa-solid fa-star" style="color: rgb(255, 0, 0);"></i>
+                    <i class="fa-solid fa-star" style="color: rgb(255, 0, 0);"></i>
+                    <i class="fa-solid fa-star" style="color: rgb(255, 0, 0);"></i>
+                    <i class="fa-solid fa-star" style="color: rgb(255, 0, 0);"></i>
+                    <i class="fa-solid fa-star" style="color: rgb(255, 0, 0);"></i>
+                </span>
+
+            <p class="descricao">
+                Hoje faz 1 ano que a minha vida ficou mais leve, mais bonita e cheia de sentido… tudo porque você
+                chegou.❤️
+
+                É difícil colocar em palavras o quanto esse tempo ao seu lado foi especial. Cada momento, cada risada,
+                cada conversa e até os desafios que a gente enfrentou juntos só me fizeram ter mais certeza de que é
+                você.
+
+                Você transformou meus dias, trouxe paz quando eu precisei, alegria quando eu nem esperava e amor em cada
+                detalhe. Estar com você é onde eu me sinto em casa.
+
+                Obrigado por ser essa pessoa incrível, por me apoiar, me entender e por caminhar comigo. Eu sou muito
+                grato por tudo o que a gente construiu até aqui… e mais ainda animado por tudo o que ainda vamos viver.
+
+                Eu te amo, hoje e sempre. Feliz 1 ano pra gente! ❤️
+            </p>
+
+            <div class="botoes">
+                <button> <i class="fa-solid fa-play"></i> Continuar</button>
+                <button> <i class="fa-solid fa-star"></i> Favorito</button>
+            </div>
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="momentos">
+        <h2>Nossos Melhores Momentos</h2>
+
+
+        <div class="swiper">
+
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"> <img src="./img/1.png"> </div>
+                <div class="swiper-slide"> <img src="./img/2.png"> </div>
+                <div class="swiper-slide"> <img src="./img/3.png"> </div>
+                <div class="swiper-slide"> <img src="./img/4.png"> </div>
+                <div class="swiper-slide"> <img src="./img/5.png"> </div>
+                <div class="swiper-slide"> <img src="./img/6.png"> </div>
+                <div class="swiper-slide"> <img src="./img/7.png"> </div>
+                <div class="swiper-slide"> <img src="./img/8.png"> </div>
+                <div class="swiper-slide"> <img src="./img/9.png"> </div>
+                <div class="swiper-slide"> <img src="./img/10.png"> </div>
+                <div class="swiper-slide"> <img src="./img/11.png"> </div>
+                <div class="swiper-slide"> <img src="./img/12.png"> </div>
+                <div class="swiper-slide"> <img src="./img/13.png"> </div>
+                <div class="swiper-slide"> <img src="./img/14.png"> </div>
+                <div class="swiper-slide"> <img src="./img/15.png"> </div>
+                <div class="swiper-slide"> <img src="./img/16.png"> </div>
+                <div class="swiper-slide"> <img src="./img/17.png"> </div>
+                <div class="swiper-slide"> <img src="./img/18.png"> </div>
+                <div class="swiper-slide"> <img src="./img/19.png"> </div>
+            </div>
+
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            loop: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            sliderPerView: 2,
+            spaceBetween: 10,
+            loop: true,
+            breakpoints: {
+                600: {
+                    loop: true,
+                    sliderPerView: 3,
+                    spaceBetween: 15,
+                },
+                900: {
+                    loop:true,
+                    slidesPerView:4,
+                    spaceBetween: 40,
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>
