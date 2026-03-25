@@ -30,7 +30,7 @@ body {
 
 .banner {
     position: relative;
-    background: url(./img/1.png) no-repeat center/cover;
+    background: url(./assets/1.png) no-repeat center/cover;
     padding: 180px 1rem 2rem;
     background-size: cover;
 }
